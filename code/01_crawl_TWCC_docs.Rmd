@@ -1,0 +1,45 @@
+---
+title: "01_crawl_TWCC_docs"
+author: "Steve, Yu"
+date: "2020/9/22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(dplyr)
+library(data.table)
+opts_chunk$set(echo = TRUE)
+```
+
+# File Target
+
+- crawl TWCC docs: [TWCC](https://www.twcc.ai/doc?page=das)
+
+---
+
+```{r}
+library(rvest)
+library(xml2)
+url <- "https://www.twcc.ai/#doc"
+html.content <- read_html(x = url)
+html.content %>% str
+html.content %>% class
+
+html.content %>%
+  html_nodes("h2")
+```
+
+
+```{r}
+html.content$doc %>% html_nodes(".v-btn__content")
+
+title_path <- '//*[contains(concat( " ", @class, " " ), concat( " ", "headline", " " ))]'
+html.content %>% html_nodes(xpath = title_path) %>% html_text()
+
+```
+
+
+---
+
+## END

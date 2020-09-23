@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1600758482974.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3289414892",
+    "id" : "CF40E92A",
+    "lastKnownWriteTime" : 1600815697,
+    "last_content_update" : 1600815697659,
+    "path" : "D:/NCHC/QA_chatbot_POC/code/01_crawl_TWCC_docs.Rmd",
+    "project_path" : "code/01_crawl_TWCC_docs.Rmd",
+    "properties" : {
+        "cursorPosition" : "24,12",
+        "last_setup_crc32" : "4D9EAB5E45e6a54",
+        "scrollLine" : "17",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
